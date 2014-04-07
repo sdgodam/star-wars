@@ -9,6 +9,9 @@
 public class NameGenerator
 {
     //no instance variables
+    private static final int CERO = 0;
+    private static final int DOS = 2;
+    private static final int TRES = 3;
 
     /**
      * Constructor for objects of class NameGenerator
@@ -34,8 +37,8 @@ public class NameGenerator
      */
     public String generateStarWarsName(String yourSurname, String yourName, String yourMotherSurname, String city)
     {
-        String starWarsName = yourSurname.substring(0,3) + yourName.toLowerCase().substring(0,3) + " " +
-                    yourMotherSurname.substring(0,2) + city.toLowerCase().substring(0,3);
+        String starWarsName = yourSurname.substring(CERO,TRES) + yourName.toLowerCase().substring(CERO,TRES) + " " +
+                    yourMotherSurname.substring(CERO,DOS) + city.toLowerCase().substring(CERO,TRES);
         
         return starWarsName;
     }
